@@ -14,5 +14,5 @@ def update_text(text):
 print(update_text(
     'Etiam tincidunt neque erat, quis molestie enim imperdiet vel. '
     'Integer urna nisl, facilisis vitae semper at, dignissim vitaae libero'
-    )
+)
 )
