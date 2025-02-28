@@ -9,4 +9,5 @@ def print_sequence():
         else:
             print(i)
 
+
 print_sequence()
