@@ -8,6 +8,7 @@ SALARY = int(input('Input salary: '))
 # Остановился на текущем решении.
 # Подскажи, как можно было сделать по-другому?
 
+
 def input_salary():
     salary = int(input('Input salary: '))
     return salary
