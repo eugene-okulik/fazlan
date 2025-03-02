@@ -9,9 +9,9 @@ SALARY = int(input('Input salary: '))
 # Подскажи, как можно было сделать по-другому?
 
 
-def input_salary():
-    salary = int(input('Input salary: '))
-    return salary
+# def input_salary():
+#     salary = int(input('Input salary: '))
+#     return salary
 
 
 def calculate_bonus():
