@@ -39,7 +39,6 @@ class SchoolBook(Book):
         self.subject = subject
         self.school_class = school_class
         self.is_exercise = is_exercise
-        self.is_reserved = is_reserved  # как по-другому можно было реализовать?
 
     def print_schoolbook_details(self):
         if self.is_reserved:
