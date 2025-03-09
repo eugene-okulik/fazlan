@@ -26,7 +26,7 @@ def print_result():
         # Как получать сразу строку и дату?
         # пробовал через chain и yield from, но ничего не подошло
 
-        date = find_date()
+        # date = find_date()
         ...
 
 # print_result()
