@@ -81,7 +81,11 @@ for book in books:
     print(book['title'])
 
 cursor.execute(
-    f"SELECT * from `st-onl`.students s join `groups` g on s.group_id = g.id join books b on s.id = b.taken_by_student_id join marks m on s.id = m.student_id where s.id = {student_id}")
+    f"SELECT * from `st-onl`.students s join `groups` g on s.group_id = g.id"
+    f"join books b on s.id = b.taken_by_student_id"
+    f"join marks m on s.id = m.student_id"
+    f"where s.id = {student_id}"
+)
 student_info = cursor.fetchall()
 print(f'Вся инфа про студента: {student_info}')
 
