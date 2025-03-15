@@ -86,6 +86,8 @@ cursor.execute(
     f"join marks m on s.id = m.student_id"
     f"where s.id = {student_id}"
 )
+
+
 student_info = cursor.fetchall()
 print(f'Вся инфа про студента: {student_info}')
 
