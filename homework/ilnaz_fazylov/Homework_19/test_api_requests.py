@@ -92,3 +92,8 @@ def test_patch_object(test_info, new_object_id):
         headers=headers
     ).json()
     assert response['name'] == 'Test_1_2'
+
+
+def test_delete_object(test_info, new_object_id):
+    response = requests.delete(f'http://167.172.172.115:52353/object/{new_object_id}')
+    assert response.status_code == 200, 'Status code is incorrect'
