@@ -18,7 +18,7 @@ def test_get_one_object(all_tests_info, test_info, new_object_id):
 @allure.title('Получение всех объектов')
 @pytest.mark.medium
 def test_get_all_objects(test_info):
-    with allure.step(f'Run get request for all objects'):
+    with allure.step('Run get request for all objects'):
         response = requests.get('http://167.172.172.115:52353/object').json()
     with allure.step('Check that object length is 1'):
         assert len(response) == 1, 'Not all posts returned'
