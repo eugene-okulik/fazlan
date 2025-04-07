@@ -7,7 +7,7 @@ class UpdateObject(BaseEndpoint):
 
     @allure.step('Update an object')
     def change_object(self, object_id, payload, headers=None):
-        # headers = headers if headers else self.headers
+        headers = headers if headers else self.headers
         self.response = requests.put(
             f'{self.url}/{object_id}',
             json=payload,
