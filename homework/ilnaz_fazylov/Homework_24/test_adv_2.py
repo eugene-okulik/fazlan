@@ -1,5 +1,6 @@
 import pytest
 from selenium import webdriver
+from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
@@ -17,9 +18,12 @@ def driver():
 
 
 def accept_cookie(driver):
-    wait = WebDriverWait(driver, 10)
-    accept_btn = wait.until(EC.element_to_be_clickable((By.ID, 'accept-btn')))
-    accept_btn.click()
+    wait = WebDriverWait(driver, 5)
+    try:
+        accept_btn = wait.until(EC.element_to_be_clickable((By.ID, 'accept-btn')))
+        accept_btn.click()
+    except TimeoutException:  # обработка запуска без ВПН. Ранее не падал
+        pass
 
 
 def move_to_item(driver):
