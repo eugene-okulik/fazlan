@@ -1,0 +1,8 @@
+FIRST_NAME = "#firstname"
+LAST_NAME = "//*[@title='Last Name']"
+EMAIL = "#email_address"
+PASSWORD = "#password"
+CONFIRM_PASSWORD = "#password-confirmation"
+SUBMIT = "button.submit"
+PASSWORD_ERROR = "#password-error"
+CONTACT_INFO = "//*[@class='box-content']/p"
