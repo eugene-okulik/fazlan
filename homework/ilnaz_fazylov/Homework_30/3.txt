@@ -1,0 +1,9 @@
+/dev/null      -> crw-rw-rw- (символьное устройство)
+/dev/zero      -> crw-rw-rw- (символьное устройство)
+/dev/sda       -> No such file or directory). Если бы было, то это блочное устройство
+/dev/tty       -> crw-rw-rw- (символьное устройство)
+/root          -> drwx------ (каталог)
+/etc/passwd    -> -rw-r--r-- (обычный файл)
+/proc/mounts   -> lrwxrwxrwx (символьная ссылка)
+/bin/ls        -> -rwxr-xr-x (обычный файл)
+/bin/zcat      -> -rwxr-xr-x (обычный файл)
