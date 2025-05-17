@@ -1,0 +1,9 @@
+Go to first line in file:                       g
+Go to last line in file:                        G
+Forward one window:                             Space/^F
+Forward one line:                               Enter/j
+Backward one line:                              ^P/k
+Search forward for matching line:               /
+Search backward for matching line:              ?
+Repeat previous search:                         n
+Repeat previous search in reverse direction:    N
